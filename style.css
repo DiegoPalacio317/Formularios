@@ -1,0 +1,25 @@
+form {
+    width: 300px;
+    margin: 0;
+    text-align: left;
+}
+
+input,
+select {
+    display: block;
+    margin: 10px 0;
+    width: 100%;
+}
+
+button {
+    margin-top: 15px;
+    padding: 10px;
+    background-color: #cf0e0e;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #45a049;
+}

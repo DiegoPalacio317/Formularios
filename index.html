@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OJALA SIRVA</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <h1>
+        FORMULARIOS
+    </h1>
+
+</html>
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario de Validaciones</title>
+</head>
+
+<body>
+    <form id="Formularios">
+        <hr>
+        <label for="nombre">Nombre:
+        </label>
+        <input type="text" id="nombre" pattern="[a-zA-Z]+" required>
+
+        <hr>
+        <label for="apellido">Apellido:
+        </label>
+
+        <input type="text" id="apellido" pattern="[a-z]+" required>
+
+        <hr>
+        <label for="color">Color Favorito:
+        </label>
+        <input type="color" id="color" required>
+
+        <hr>
+        <label for="edad">Edad:
+        </label>
+        <input type="number" id="edad" required>
+
+        <hr>
+        <label for="numeros">Números (solo números, tipo text):</label>
+        <input type="text" id="numeros" oninput="this.value = this.value.replace(/[^0-9]/g, '');" required>
+
+        <hr>
+        <label for="positivos">Positivos:</label>
+        <input type="number" id="positivos" min="1" required>
+
+        <hr>
+        <label for="max-min">Maximo-Minimo (0.5 pasos):</label>
+        <input type="number" id="max-min" step="0.5" min="10" max="20" value="15" required>
+
+        <hr>
+        <label for="fecha">Fecha de Nacimiento:</label>
+        <input type="date" id="fecha" required>
+
+        <hr>
+        <label for="hora">Hora de Registro:</label>
+        <input type="time" id="hora" required>
+
+        <hr>
+        <label for="ciudad">Ciudad:</label>
+        <select id="ciudad" required>
+            <option value="Bucaramanga">Bucaramanga</option>
+            <option value="Medellin">Medellin</option>
+            <option value="Bogota">Bogota</option>
+        </select>
+
+        <hr>
+        <label for="genero">Género:</label>
+        <select id="genero" required>
+            <option value="Masculino">Masculino</option>
+            <option value="Femenino">Femenino</option>
+        </select>
+
+        <hr>
+        <label for="materias">Materias (opcional):</label>
+        <select id="materias" multiple>
+            <option value="HTML">HTML</option>
+            <option value="CSS">CSS</option>
+            <option value="JAVA">Java</option>
+        </select>
+        <hr>
+        <label for="archivos">Archivos (.jpg, .png):</label>
+        <input type="file" id="archivos" accept=".jpg, .png" multiple required>
+
+        <hr>
+        <label for="password">Contraseña:</label>
+        <input type="password" id="password" required>
+
+        <hr>
+        <label for="aprendiz">Aprendiz:</label>
+        <input type="text" id="aprendiz" value="Nombre del Aprendiz" readonly>
+
+        <button type="submit">Enviar</button>
+    </form>
+</body>
+
+</html>
